@@ -492,9 +492,18 @@ background-color: rgb(29, 29, 29);
 #installmentAmount {
   margin-left: 265px;
 }
+
+.checkbox1 {
+  font-family: Ubuntu;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 400;
+  display: flex;
+  margin-left: 753px;
+}
 #checkbox1 {
-  margin: 24px;
-  margin-left: 704px;
+  margin-top: -52px;
+  margin-left: 710px;
 }
   #checkbox2 {
     margin-top: 135px;
@@ -1613,3 +1622,4 @@ footer a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
 }
+
