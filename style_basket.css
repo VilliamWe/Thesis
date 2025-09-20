@@ -532,9 +532,9 @@ background-color: rgb(29, 29, 29);
 .payment {
   position: absolute;
   width: 848px;
-  height: 1130px;
+  height: 1266px;
   left: 967px;
-  top: 3464px;
+  top: 307px;
   border-radius: 30px;
   background: rgb(29, 29, 29);
 }
@@ -637,12 +637,12 @@ line-height: 21px;
 letter-spacing: 0%;
 text-align: center;
 }
-.text_back_payment5 {
+.text_back_payment5{
   position: absolute;
-  width: 282px;
+  width: 272px;
   height: 17px;
   left: 1261px;
-  top: 4555px;
+  top: 1520px;
   color: rgb(139, 139, 139);
   font-family: Ubuntu;
   font-size: 15px;
@@ -650,7 +650,7 @@ text-align: center;
   line-height: 17px;
   letter-spacing: 0%;
   text-align: center;
-}
+  }
 .text_back_payment9{
 
 position: absolute;
@@ -1610,6 +1610,7 @@ footer a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
 }
+
 
 
 
