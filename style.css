@@ -1007,6 +1007,18 @@ input[type="password"] {
   box-shadow: 0 0 0 0.25rem rgba(125, 125, 125, 0.25);
 }
 
+.checkbox1 {
+  font-family: Ubuntu;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 400;
+  display: flex;
+  margin-left: 753px;
+}
+#checkbox1 {
+  margin-top: -52px;
+  margin-left: 710px;
+}
 #checkbox2 {
   margin-top: 135px;
   margin-left: 767px;
@@ -1597,8 +1609,6 @@ input[type="password"] {
   letter-spacing: 0%;
   text-align: center;
 }
-
-
 
 .payment2 {
   position: absolute;
@@ -2647,4 +2657,3 @@ input[type="password"] {
   letter-spacing: 5%;
   text-align: left;
 }
-
