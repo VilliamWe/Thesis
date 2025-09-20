@@ -534,7 +534,7 @@ background-color: rgb(29, 29, 29);
   width: 848px;
   height: 1130px;
   left: 967px;
-  top: 307px;
+  top: 3464px;
   border-radius: 30px;
   background: rgb(29, 29, 29);
 }
@@ -621,7 +621,9 @@ background-color: #5e5e5e;
   cursor: pointer;
 
 }
-
+main a {
+  color: rgb(255, 255, 255);
+}
 
 .text_back_payment4{
 width: 627px;
@@ -1608,6 +1610,7 @@ footer a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
 }
+
 
 
 
