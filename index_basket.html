@@ -77,15 +77,17 @@
         <div class="back_buy"></div>
 
 
+
         <div class="container_payment">
             <p class="text_payment">Выберите блоки обучения</p>
-   
+
             <p class="frame"></p>
             <p class="line_payment"></p>
             <p class="number_payment">1</p>
 
             <p class="checkbox1">Все</p>
             <input type="checkbox" class="checkbox-input1" id="checkbox1">
+
             <input type="checkbox" class="checkbox-input1" id="checkbox2">
             <input type="checkbox" class="checkbox-input1" id="checkbox3">
             <input type="checkbox" class="checkbox-input1" id="checkbox4">
@@ -100,11 +102,7 @@
                 const checkbox1 = document.getElementById('checkbox1');
                 const checkboxes = document.querySelectorAll('.checkbox-input1'); // Выбираем все чекбоксы
 
-                checkbox1.addEventListener('change', () => {
-                    checkboxes.forEach(checkbox => {
-                        checkbox.checked = checkbox1.checked; // Синхронизируем состояние
-                    });
-                });
+
             </script>
             <div class="container_frame_payment">
 
@@ -249,12 +247,12 @@
             <div class="back_payment5"></div>
             <input type="checkbox" class="checkbox-input2" id="checkbox12">
             <div class="back_payment6"></div>
-            <input type="checkbox" class="checkbox-input2" id="checkbox13">
-            <div class="back_payment7"></div>
+
             <div class="back_payment8">
                 <button class="text_back_payment12" id="submitOrder">Оформить заказ</button>
             </div>
-      <div class="text_back_payment5">Нажмите на кнопку <u>"Оформить заказ"</u></div>
+        </div>
+        <div class="text_back_payment5">Нажмите на кнопку <u>"Оформить заказ"</u></div>
         <div class="text_back_payment9">Даю <a href="Форма согласия.docx"><u>согласие</u></a> на обработку персональных
             данных</div>
         <div class="text_back_payment10">Ознакомлен с условиями <a href="Форма согласия.docx"><u>договор-оферты</u></a>
@@ -361,6 +359,7 @@
             });
         </script>
 
+
     </main>
 
 
@@ -399,6 +398,7 @@
 
 
 </html>
+
 
 
 
