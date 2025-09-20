@@ -532,7 +532,7 @@ background-color: rgb(29, 29, 29);
 .payment {
   position: absolute;
   width: 848px;
-  height: 1266px;
+  height: 1130px;
   left: 967px;
   top: 307px;
   border-radius: 30px;
@@ -642,7 +642,7 @@ text-align: center;
   width: 272px;
   height: 17px;
   left: 1261px;
-  top: 1520px;
+  top: 1397px;
   color: rgb(139, 139, 139);
   font-family: Ubuntu;
   font-size: 15px;
@@ -1610,6 +1610,7 @@ footer a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
 }
+
 
 
 
