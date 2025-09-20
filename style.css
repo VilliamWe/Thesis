@@ -1560,7 +1560,9 @@ input[type="password"] {
   letter-spacing: 0%;
   text-align: center;
 }
-
+main a {
+  color: rgb(255, 255, 255);
+}
 .text_back_payment9 {
   position: absolute;
   width: 478px;
@@ -2627,7 +2629,7 @@ input[type="password"] {
 }
 .footer_text5 {
   position: absolute;
-  margin-top: 165.5px;
+  margin-top: 171.5px;
   left: 1452px;
   color: rgba(255, 255, 255, 0.8);
   font-family: Ubuntu;
@@ -2661,6 +2663,7 @@ input[type="password"] {
   letter-spacing: 5%;
   text-align: left;
 }
+
 footer a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
