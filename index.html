@@ -775,7 +775,10 @@
                 <button class="text_back_payment12" id="submitOrder">Оформить заказ</button>
             </div>
         </div>
-
+       <div class="text_back_payment5">Нажмите на кнопку <u>"Оформить заказ"</u></div>
+        <div class="text_back_payment9">Даю <u>согласие</u> на обработку персональных данных</div>
+        <div class="text_back_payment10">Ознакомлен с условиями <u>договоров-оферты</u></div>
+        <div class="text_back_payment11">Даю <u>согласие на рекламную рассылку</u></div>
         <script>
             document.getElementById('submitOrder').addEventListener('click', function (e) {
                 e.preventDefault(); // чтобы форма не отправлялась, если есть
@@ -799,9 +802,7 @@
                 // Если все заполнено — показываем сообщение
                 alert('Ваш заказ успешно оформлен');
             });
-        </script>
 
-        <script>
             const figura1 = document.getElementById('figura1');
             const figura2 = document.getElementById('figura2');
             const installmentBtn = document.getElementById('installment');
@@ -819,12 +820,7 @@
                 figura2.style.display = 'none';
             });
 
-        </script>
-        <div class="text_back_payment5">Нажмите на кнопку <u>"Оформить заказ"</u></div>
-        <div class="text_back_payment9">Даю <u>согласие</u> на обработку персональных данных</div>
-        <div class="text_back_payment10">Ознакомлен с условиями <u>договоров-оферты</u></div>
-        <div class="text_back_payment11">Даю <u>согласие на рекламную рассылку</u></div>
-        <script>
+
             document.addEventListener('DOMContentLoaded', () => {
                 const checkboxes = document.querySelectorAll('.checkbox-input1');
                 const installmentAmount = document.getElementById('installmentAmount');
@@ -1016,3 +1012,4 @@
 
 
 </html>
+
