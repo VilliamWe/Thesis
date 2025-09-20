@@ -252,6 +252,10 @@
             <div class="back_payment8">
                 <button class="text_back_payment12" id="submitOrder">Оформить заказ</button>
             </div>
+      <div class="text_back_payment5">Нажмите на кнопку <u>"Оформить заказ"</u></div>
+        <div class="text_back_payment9">Даю <a href="Форма согласия.docx"><u>согласие</u></a> на обработку персональных
+            данных</div>
+        <div class="text_back_payment10">Ознакомлен с условиями <a href="Форма согласия.docx"><u>договор-оферты</u></a>
         </div>
 
         <script>
@@ -277,9 +281,7 @@
                 // Если все заполнено — показываем сообщение
                 alert('Ваш заказ успешно оформлен');
             });
-        </script>
 
-        <script>
             const figura1 = document.getElementById('figura1');
             const figura2 = document.getElementById('figura2');
             const installmentBtn = document.getElementById('installment');
@@ -297,55 +299,62 @@
                 figura2.style.display = 'none';
             });
 
-        </script>
-        <div class="text_back_payment5">Нажмите на кнопку <u>"Оформить заказ"</u></div>
-        <div class="text_back_payment9">Даю <u>согласие</u> на обработку персональных данных</div>
-        <div class="text_back_payment10">Ознакомлен с условиями <u>договоров-оферты</u></div>
-        <div class="text_back_payment11">Даю <u>согласие на рекламную рассылку</u></div>
-        <script>
             document.addEventListener('DOMContentLoaded', () => {
-                const checkboxes = document.querySelectorAll('.checkbox-input1');
-                const installmentAmount = document.getElementById('installmentAmount');
+                const checkboxAll = document.getElementById('checkbox1'); // чекбокс "Все"
+                const checkboxes = document.querySelectorAll('.checkbox-input1'); // все чекбоксы
 
+                // Обработчик для чекбокса "Все"
+                checkboxAll.addEventListener('change', () => {
+                    checkboxes.forEach((checkbox) => {
+                        checkbox.checked = checkboxAll.checked;
+                    });
+                    // Обновляем цену при изменении
+                    updatePrices();
+                });
 
-                const prices = [
-                    20900, // чекбокс 0
-                    20900, // чекбокс 1
-                    21900, // чекбокс 2
-                    22900, // чекбокс 3
-                    29900, // чекбокс 4
-                    29900, // чекбокс 5
-                    28900, // чекбокс 6
-                    25900, // чекбокс 7
-                    24900, // чекбокс 8
-                    // 8000 — этот прайс, возможно, относится к чекбоксу 9
-                ];
+                // Обработчики для остальных чекбоксов, чтобы при их изменении, если все выбраны, чекбокс "Все" тоже стал выбранным
+                checkboxes.forEach((checkbox) => {
+                    checkbox.addEventListener('change', () => {
+                        const allChecked = Array.from(checkboxes).every(cb => cb.checked);
+                        document.getElementById('checkbox1').checked = allChecked;
+                        updatePrices();
+                    });
+                });
 
-
+                // Изначальный расчет цен
                 function updatePrices() {
+                    // ваш код обновления цен
+                    const checkboxes = document.querySelectorAll('.checkbox-input1');
+                    const prices = [
+                        0,// чекбокс 0
+                        20900, // чекбокс 1
+                        20900, // чекбокс 2
+                        21900, // чекбокс 3
+                        22900, // чекбокс 4
+                        29900, // чекбокс 5
+                        29900, // чекбокс 6
+                        28900, // чекбокс 7
+                        25900, // чекбокс 8
+                        24900, // чекбокс 9
+
+                    ];
+                    const payNowAmount = document.getElementById('payNowAmount');
+                    const installmentAmount = document.getElementById('installmentAmount');
+
+
                     let total = 0;
                     checkboxes.forEach((checkbox, index) => {
                         if (checkbox.checked) {
                             total += prices[index];
                         }
                     });
-                    payNowAmount.textContent = total.toLocaleString() + ' Р';
+                    document.getElementById('payNowAmount').textContent = total.toLocaleString() + ' Р';
                     const months = 12;
                     const perMonth = Math.ceil(total / months);
-
-                    // Обновляем только расчет стоимости за месяц
                     installmentAmount.textContent = perMonth.toLocaleString() + ' Р';
-
-                    // Можно убрать или оставить пустым блок с общей стоимостью
-                    // document.getElementById('installmentDetails').innerHTML = '';
                 }
 
-                // Обработчики для чекбоксов
-                checkboxes.forEach((checkbox) => {
-                    checkbox.addEventListener('change', updatePrices);
-                });
-
-                // Изначальный расчет
+                // Изначальный вызов
                 updatePrices();
             });
         </script>
@@ -388,5 +397,6 @@
 
 
 </html>
+
 
 
